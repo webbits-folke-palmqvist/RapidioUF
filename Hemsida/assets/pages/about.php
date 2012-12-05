@@ -1,3 +1,3 @@
-<div class="hero-unit">
+<div class="paper">
 	<p>Om oss</p>
 </div>
