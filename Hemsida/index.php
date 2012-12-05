@@ -9,7 +9,7 @@ switch ($page) {
 		$show_page = "home";
 		$title = "Hem";
 		break;
-	case 'OmOss':
+	case 'Om':
 		$show_page = "about";
 		$title = "Om oss";
 		break;
@@ -28,9 +28,43 @@ switch ($page) {
 		<title>Rapidio UF · <?php echo $title; ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link href='assets/css/main.css' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-1.2.6.min.js"></script>
 	</head>
 	<body>
-		<?php include('assets/pages/'.$show_page.'.php'); ?>
+		<div class="container center">
+			<div class="nav">
+				<div class="navbar">
+					<ul>
+						<li><a href="?page=Hem">Hem</a></li>
+						<li>|</li>
+						<li><a href="?page=Kontakt">Kontakt</a></li>
+						<li>|</li>
+						<li><a href="?page=Om">Om oss</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="slideshow">
+			   	<div>
+			     	<img src="assets/img/logo.png">
+			   	</div>
+			   	<div>
+			    	Pretty cool eh? This slide is proof the content can be anything.
+			   	</div>
+			</div>
+			<script type="text/javascript">
+				$("#slideshow > div:gt(0)").hide();
+				setInterval(function() { 
+				  $('#slideshow > div:first')
+				    .fadeOut(1000)
+				    .next()
+				    .fadeIn(1000)
+				    .end()
+				    .appendTo('#slideshow');
+				},  5000);
+			</script>
+			<div class="paper">			
+				<?php include('assets/pages/'.$show_page.'.php'); ?>
+			</div>
+		</div>
 	</body>
 </html>

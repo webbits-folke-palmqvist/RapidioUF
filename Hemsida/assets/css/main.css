@@ -1,0 +1,65 @@
+body {
+	background-color: #d3731c;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container {
+	width: 940px;
+}
+
+.paper {
+	background-color: #EEEEEE;
+	padding: 1px 10px 1px 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.nav {
+	text-align: right;
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+.navbar li a {
+	text-transform: capitalize;
+	font-family: Arial, sans-serif;
+	padding: 5px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.navbar a:hover {
+	color: #EEEEEE;
+}
+
+#slideshow { 
+    margin-bottom: 10px;
+    position: relative; 
+    width: 920px; 
+    height: 250px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    background-color: #EEEEEE;
+}
+
+#slideshow img {
+	max-width: 920px;
+	max-height: 250px;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
