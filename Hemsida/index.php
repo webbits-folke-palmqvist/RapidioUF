@@ -51,7 +51,9 @@ switch ($page) {
 				     	<img src="assets/img/logo.png">
 				   	</div>
 				   	<div>
-				    	Pretty cool eh? This slide is proof the content can be anything.
+				    	Bacon ipsum dolor sit amet beef ribs boudin strip steak biltong cow venison hamburger ground round capicola. Ham pork loin venison meatloaf ground round jerky, andouille beef ribs. Tongue turducken rump bresaola shoulder pancetta meatloaf. Doner pork chop beef tri-tip, spare ribs fatback turducken ground round short loin pig capicola ham corned beef andouille meatloaf. Swine sausage tail, beef ribs meatloaf shank leberkas hamburger kielbasa short ribs ham short loin pancetta.
+				    	<br><br>
+				    	Bacon ipsum dolor sit amet beef ribs boudin strip steak biltong cow venison hamburger ground round capicola. Ham pork loin venison meatloaf ground round jerky, andouille beef ribs. Tongue turducken rump bresaola shoulder pancetta meatloaf. Doner pork chop beef tri-tip, spare ribs fatback turducken ground round short loin pig capicola ham corned beef andouille meatloaf. Swine sausage tail, beef ribs meatloaf shank leberkas hamburger kielbasa short ribs ham short loin pancetta.
 				   	</div>
 				</div>
 				<script type="text/javascript">
