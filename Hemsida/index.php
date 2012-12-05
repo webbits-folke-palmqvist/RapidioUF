@@ -35,11 +35,11 @@ switch ($page) {
 			<div class="nav">
 				<div class="navbar">
 					<ul>
-						<li><a href="?page=Hem">Hem</a></li>
+						<li <?php if($show_page == "home") { echo 'class="active"'; } ?>><a href="?page=Hem">Hem</a></li>
 						<li>|</li>
-						<li><a href="?page=Kontakt">Kontakt</a></li>
+						<li <?php if($show_page == "contact") { echo 'class="active"'; } ?>><a href="?page=Kontakt">Kontakt</a></li>
 						<li>|</li>
-						<li><a href="?page=Om">Om oss</a></li>
+						<li <?php if($show_page == "about") { echo 'class="active"'; } ?>><a href="?page=Om">Om oss</a></li>
 					</ul>
 				</div>
 			</div>
@@ -48,12 +48,10 @@ switch ($page) {
 				?>
 				<div id="slideshow">
 				   	<div>
-				     	<img src="assets/img/logo.png">
+				     	<img src="http://datatel1.com/wp-content/uploads/2011/01/940x250-1.jpg">
 				   	</div>
 				   	<div>
-				    	Bacon ipsum dolor sit amet beef ribs boudin strip steak biltong cow venison hamburger ground round capicola. Ham pork loin venison meatloaf ground round jerky, andouille beef ribs. Tongue turducken rump bresaola shoulder pancetta meatloaf. Doner pork chop beef tri-tip, spare ribs fatback turducken ground round short loin pig capicola ham corned beef andouille meatloaf. Swine sausage tail, beef ribs meatloaf shank leberkas hamburger kielbasa short ribs ham short loin pancetta.
-				    	<br><br>
-				    	Bacon ipsum dolor sit amet beef ribs boudin strip steak biltong cow venison hamburger ground round capicola. Ham pork loin venison meatloaf ground round jerky, andouille beef ribs. Tongue turducken rump bresaola shoulder pancetta meatloaf. Doner pork chop beef tri-tip, spare ribs fatback turducken ground round short loin pig capicola ham corned beef andouille meatloaf. Swine sausage tail, beef ribs meatloaf shank leberkas hamburger kielbasa short ribs ham short loin pancetta.
+				    	<img src="http://www.straddiebungalows.com.au/assets/cache/jetty2-940x250r0.jpg">
 				   	</div>
 				</div>
 				<script type="text/javascript">
@@ -70,9 +68,7 @@ switch ($page) {
 				<?php
 			}
 			?>
-			<div class="paper">			
-				<?php include('assets/pages/'.$show_page.'.php'); ?>
-			</div>
+			<?php include('assets/pages/'.$show_page.'.php'); ?>
 		</div>
 	</body>
 </html>

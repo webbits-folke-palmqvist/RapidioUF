@@ -41,12 +41,16 @@ body {
 	color: #EEEEEE;
 }
 
+.active a {
+	color: #EEEEEE;
+}
+
 #slideshow { 
     margin-bottom: 10px;
     position: relative; 
-    width: 920px; 
+    width: 925px; 
     height: 250px; 
-    padding: 10px; 
+    padding: 7px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     background-color: #EEEEEE;
 }
