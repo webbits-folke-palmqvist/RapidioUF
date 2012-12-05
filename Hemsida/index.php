@@ -43,25 +43,31 @@ switch ($page) {
 					</ul>
 				</div>
 			</div>
-			<div id="slideshow">
-			   	<div>
-			     	<img src="assets/img/logo.png">
-			   	</div>
-			   	<div>
-			    	Pretty cool eh? This slide is proof the content can be anything.
-			   	</div>
-			</div>
-			<script type="text/javascript">
-				$("#slideshow > div:gt(0)").hide();
-				setInterval(function() { 
-				  $('#slideshow > div:first')
-				    .fadeOut(1000)
-				    .next()
-				    .fadeIn(1000)
-				    .end()
-				    .appendTo('#slideshow');
-				},  5000);
-			</script>
+			<?php
+			if($show_page == "home"){
+				?>
+				<div id="slideshow">
+				   	<div>
+				     	<img src="assets/img/logo.png">
+				   	</div>
+				   	<div>
+				    	Pretty cool eh? This slide is proof the content can be anything.
+				   	</div>
+				</div>
+				<script type="text/javascript">
+					$("#slideshow > div:gt(0)").hide();
+					setInterval(function() { 
+					  $('#slideshow > div:first')
+					    .fadeOut(1000)
+					    .next()
+					    .fadeIn(1000)
+					    .end()
+					    .appendTo('#slideshow');
+					},  5000);
+				</script>
+				<?php
+			}
+			?>
 			<div class="paper">			
 				<?php include('assets/pages/'.$show_page.'.php'); ?>
 			</div>
