@@ -8,6 +8,17 @@ body {
 	margin-left: auto;
 }
 
+.box {
+	float: left;
+}
+
+.box3 {
+	width: 31%;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	background-color: #EEEEEE;
+}
+
 .container {
 	width: 940px;
 }
@@ -60,6 +71,7 @@ body {
 
 .footer {
 	text-align: center;
+	clear: left;
 }
 
 .footer a {
