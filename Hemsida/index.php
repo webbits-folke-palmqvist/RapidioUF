@@ -33,7 +33,7 @@ switch ($page) {
 	<body>
 		<div class="container center">
 			<div class="nav">
-				<img src="assets/img/logo.png">
+				<a href="?page=Hem"><img src="assets/img/logo.png"></a>
 				<div class="navbar">
 					<ul>
 						<li <?php if($show_page == "home") { echo 'class="active"'; } ?>><a href="?page=Hem">Hem</a></li>
