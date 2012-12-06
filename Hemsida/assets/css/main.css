@@ -18,7 +18,12 @@ body {
 	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-.nav {
+.nav img {
+	width: 150px;
+	margin-bottom: -45px;
+}
+
+.navbar {
 	text-align: right;
 }
 
