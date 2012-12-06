@@ -10,13 +10,19 @@ body {
 
 .box {
 	float: left;
+	margin-bottom: 10px;
+}
+
+.box div {
+	margin: 5px;
 }
 
 .box3 {
-	width: 31%;
+	width: 30%;
 	float: left;
 	padding: 0px 10px 0px 10px;
 	background-color: #EEEEEE;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 .container {
