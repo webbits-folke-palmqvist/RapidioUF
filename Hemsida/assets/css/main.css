@@ -18,6 +18,10 @@ body {
 	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
+.paper hr {
+	margin-top: -10px;
+}
+
 .nav img {
 	width: 150px;
 	margin-bottom: -45px;
@@ -51,7 +55,7 @@ body {
 }
 
 .menu {
-	margin-top: -10px;
+	margin-bottom: -10px;
 }
 
 .footer {
