@@ -50,6 +50,19 @@ body {
 	color: #EEEEEE;
 }
 
+.footer {
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer a:hover {
+	color: #EEEEEE;
+}
+
 #slideshow { 
     margin-bottom: 10px;
     position: relative; 
