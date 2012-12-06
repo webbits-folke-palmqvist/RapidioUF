@@ -1,6 +1,6 @@
 <div class="paper">
-	<h3>Kontakt</h3>
-	<hr class="menu">
+	<h2>Kontakt</h2>
+	<hr>
 	<p>Här finner du all info om hur man kontaktar oss.</p>
 	<p>
 		<strong>För rekrytering</strong> <i>- Letar du efter jobb?</i><br>
