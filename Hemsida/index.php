@@ -71,7 +71,7 @@ switch ($page) {
 			?>
 			<?php include('assets/pages/'.$show_page.'.php'); ?>
 			<div class="footer">
-				<p>Made by <a href="http://webbits.nu/">Webbits</a></p>
+				<p>Made by <a target="_Blank" href="http://webbits.nu/">Webbits</a></p>
 			</div>
 		</div>
 	</body>
