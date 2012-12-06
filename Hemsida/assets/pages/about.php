@@ -1,5 +1,5 @@
 <div class="paper">
-	<p>Om oss</p>
+	<h2>Om oss</h2>
 	<hr>
 	<img src="http://existenzmc.se//img/users/avatar/new.png">
 	<strong>Förnamn</strong> efternamn
