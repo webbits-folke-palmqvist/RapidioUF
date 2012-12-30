@@ -44,31 +44,6 @@ switch ($page) {
 					</ul>
 				</div>
 			</div>
-			<?php
-			if($show_page == "home"){
-				?>
-				<div id="slideshow">
-				   	<div>
-				     	<img src="http://datatel1.com/wp-content/uploads/2011/01/940x250-1.jpg">
-				   	</div>
-				   	<div>
-				    	<img src="http://www.straddiebungalows.com.au/assets/cache/jetty2-940x250r0.jpg">
-				   	</div>
-				</div>
-				<script type="text/javascript">
-					$("#slideshow > div:gt(0)").hide();
-					setInterval(function() { 
-					  $('#slideshow > div:first')
-					    .fadeOut(1000)
-					    .next()
-					    .fadeIn(1000)
-					    .end()
-					    .appendTo('#slideshow');
-					},  5000);
-				</script>
-				<?php
-			}
-			?>
 			<?php include('assets/pages/'.$show_page.'.php'); ?>
 			<div class="footer">
 				<p>Made by <a target="_Blank" href="http://webbits.nu/">Webbits</a></p>
