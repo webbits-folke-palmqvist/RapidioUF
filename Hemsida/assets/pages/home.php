@@ -1,9 +1,9 @@
 <div id="slideshow">
    	<div>
-     	<img src="http://datatel1.com/wp-content/uploads/2011/01/940x250-1.jpg">
+     	<img src="assets/img/bild1.jpg">
    	</div>
    	<div>
-    	<img src="http://www.straddiebungalows.com.au/assets/cache/jetty2-940x250r0.jpg">
+     	<img src="assets/img/bild1.jpg">
    	</div>
 </div>
 <script type="text/javascript">
