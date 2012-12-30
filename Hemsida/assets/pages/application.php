@@ -24,3 +24,6 @@
 	<center><?php error(); ?></center>
 	<center><?php success(); ?></center>
 </div>
+<div class="footer">
+	<p>Made by <a target="_Blank" href="http://webbits.nu/">Webbits</a></p>
+</div>
