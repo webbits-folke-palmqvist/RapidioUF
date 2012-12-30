@@ -1,4 +1,6 @@
 <?php
+include('assets/function.php');
+
 $page = @$_GET['page'];
 switch ($page) {
 	case '':
@@ -16,6 +18,10 @@ switch ($page) {
 	case 'Kontakt':
 		$show_page = "contact";
 		$title = "Kontakt";
+		break;
+	case 'Ansökan':
+		$show_page = "application";
+		$title = "Ansökan";
 		break;
 	default:
 		$show_page = "404";
