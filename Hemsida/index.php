@@ -74,15 +74,9 @@ switch ($page) {
           <div class="sidebar-nav">
             <a href="?page=Hem"><img src="assets/img/logo.png"></a>
             <hr>
-            <a class="btn btn-block" href="#">Hem</a>
-            <a class="btn btn-block" href="#">Om oss</a>
-            <a class="btn btn-block" href="#">Kontakt</a>
-            <ul class="nav nav-list">
-              <li class="nav-header">Meny</li>
-                <li <?php if($show_page == "home"){ echo 'class="active"'; } ?> ><a href="?page=Hem">Hem</a></li>
-                <li <?php if($show_page == "about"){ echo 'class="active"'; } ?> ><a href="?page=Om">Om oss</a></li>
-                <li <?php if($show_page == "contact"){ echo 'class="active"'; } ?> ><a href="?page=Kontakt">Kontakt</a></li>
-            </ul>
+            <a class="btn btn-block" href="?page=Hem">Hem</a>
+            <a class="btn btn-block" href="?page=Om">Om oss</a>
+            <a class="btn btn-block" href="?page=Kontakt">Kontakt</a>
           </div>
         </div>
         <div class="span8">
