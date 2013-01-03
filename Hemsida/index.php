@@ -72,8 +72,11 @@ switch ($page) {
       <div class="row-fluid">
         <div class="span4">
           <div class="sidebar-nav">
-            <img src="assets/img/logo.png">
+            <a href="?page=Hem"><img src="assets/img/logo.png"></a>
             <hr>
+            <a class="btn btn-block" href="#">Hem</a>
+            <a class="btn btn-block" href="#">Om oss</a>
+            <a class="btn btn-block" href="#">Kontakt</a>
             <ul class="nav nav-list">
               <li class="nav-header">Meny</li>
                 <li <?php if($show_page == "home"){ echo 'class="active"'; } ?> ><a href="?page=Hem">Hem</a></li>
@@ -93,5 +96,6 @@ switch ($page) {
       <br>
       <p style="color:#EEEEEE;">Made by <a href="#">Webbits</a></p>
     </center>
+    <?php include('assets/js/stats.js'); ?>
   </body>
 </html>
