@@ -1,40 +1,97 @@
+<?php
+include('assets/function.php');
+@session_start();
+
+$page = @$_GET['page'];
+switch ($page) {
+  case '':
+    $show_page = "home";
+    $title = "Hem";
+    break;
+  case 'Hem':
+    $show_page = "home";
+    $title = "Hem";
+    break;
+  case 'Om':
+    $show_page = "about";
+    $title = "Om oss";
+    break;
+  case 'Kontakt':
+    $show_page = "contact";
+    $title = "Kontakt";
+    break;
+  case 'Ansökan':
+    $show_page = "application";
+    $title = "Ansökan";
+    break;
+  case 'Process':
+    $show_page = "process";
+    $title = "Process";
+    break;
+  default:
+    $show_page = "404";
+    $title = "404";
+    break;
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Palmqvists Matt-och Möbelfix</title>
+    <title>Rapidio UF · <?php echo $title; ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='assets/css/bootstrap.css' rel='stylesheet' type='text/css'>
     <link href='assets/css/stylesheet.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
+      <?php
+      if($show_page == "home"){
+        ?>
+        <div id="slideshow">
+          <div>
+            <img src="assets/img/bild1.jpg">
+          </div>
+          <div>
+            <img src="assets/img/bild1.jpg">
+          </div>
+        </div>
+        <script type="text/javascript">
+          $("#slideshow > div:gt(0)").hide();
+          setInterval(function() { 
+            $('#slideshow > div:first')
+              .fadeOut(1000)
+              .next()
+              .fadeIn(1000)
+              .end()
+              .appendTo('#slideshow');
+          },  5000);
+        </script>
+        <?php
+      }
+      ?>
       <div class="row-fluid">
         <div class="span4">
           <div class="sidebar-nav">
-            <h1>LOGO HÄR</h1>
+            <img src="assets/img/logo.png">
+            <hr>
             <ul class="nav nav-list">
               <li class="nav-header">Meny</li>
-              <li class="active"><a href="index.html">Hem</a></li>
-                <li><a href="#">Mattvätt</a></li>
-                <li><a href="#">Möbeltvätt</a></li>
-                <li><a href="#">Priser</a></li>
-                <li><a href="#">Miljö</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li <?php if($show_page == "home"){ echo 'class="active"'; } ?> ><a href="?page=Hem">Hem</a></li>
+                <li <?php if($show_page == "about"){ echo 'class="active"'; } ?> ><a href="?page=Om">Om oss</a></li>
+                <li <?php if($show_page == "contact"){ echo 'class="active"'; } ?> ><a href="?page=Kontakt">Kontakt</a></li>
             </ul>
           </div>
         </div>
         <div class="span8">
           <div class="hero-unit">
-            <h1>Välkommen</h1>
-            <p>Bacon ipsum dolor sit amet short loin spare ribs prosciutto shoulder strip steak chuck andouille pork loin pig jowl. Biltong drumstick ribeye kielbasa bresaola corned beef pig short ribs ground round ham shankle t-bone pancetta spare ribs. Shank sirloin flank beef ribs venison t-bone spare ribs tenderloin beef short loin doner. Short loin bresaola leberkas sausage prosciutto filet mignon flank pork chop ham hock pig. Cow flank short ribs corned beef bacon shank swine beef ribs pig venison bresaola spare ribs.</p>
+            <?php include('assets/pages/'.$show_page.'.php'); ?>
           </div>
         </div>
       </div>
     </div>
     <center>
       <br>
-            <p style="color:#EEEEEE;"><strong>Telefon</strong> 08-0000000 · <strong>Adress</strong> Testgatan 21, 123 45 test</p>
-            <p style="color:#EEEEEE;"><strong>Följ oss på</strong> <a href="#">Facebook</a>, <a href="#">Twitter</a> <strong>eller</strong> <a href="#">Google+</a></p>
-          </center>
+      <p style="color:#EEEEEE;">Made by <a href="#">Webbits</a></p>
+    </center>
   </body>
 </html>
